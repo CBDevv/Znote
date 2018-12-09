@@ -1,5 +1,5 @@
 # Znote
-Write Notes in a Zip with Znote!
+Write notes in a zip with Znote!
 
 Znote is a new type of note taking app. 
 Rather than always opening the app to write a note, 
