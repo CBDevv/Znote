@@ -1,7 +1,9 @@
 # Znote
 Write Notes in a Zip with Znote!
 
-Znote is a new type of note taking app. Rather than always opening the app to write a note, you’ll have a widget for easy access on your home screen! 
+Znote is a new type of note taking app. 
+Rather than always opening the app to write a note, 
+you’ll have a widget for easy access on your home screen! 
 
 # Features
 
