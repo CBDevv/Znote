@@ -25,6 +25,29 @@ public class AddEditNoteActivity extends AppCompatActivity {
     Button saveButton;
 
     @Override
+    public void onBackPressed() {
+
+            String title = editTextTitle.getText().toString();
+            String description = editTextDescription.getText().toString();
+
+            if (title.trim().isEmpty() && description.trim().isEmpty()) {
+
+
+            }
+
+            Intent data = new Intent();
+            data.putExtra(EXTRA_TITLE, title);
+            data.putExtra(EXTRA_DESCRIPTION, description);
+
+            int id = getIntent().getIntExtra(EXTRA_ID, -1);
+            if (id != -1){
+                data.putExtra(EXTRA_ID, id);
+            }
+            setResult(RESULT_OK, data);
+            finish();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
@@ -37,11 +60,11 @@ public class AddEditNoteActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         if (intent.hasExtra(EXTRA_ID)){
-            setTitle("Edit");
+            setTitle("");
             editTextTitle.setText(intent.getStringExtra(EXTRA_TITLE));
             editTextDescription.setText(intent.getStringExtra(EXTRA_DESCRIPTION));
         }else{
-            setTitle("New");
+            setTitle("");
         }
 
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -78,5 +101,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
     }
 }

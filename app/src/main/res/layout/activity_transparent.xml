@@ -12,12 +12,23 @@
     <EditText
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:gravity="center"
         android:keepScreenOn="true"
         android:textColor="@color/colorPurple"
         android:textAlignment="center"
         android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/widget_saveButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurple"
+        android:textSize="14sp" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->

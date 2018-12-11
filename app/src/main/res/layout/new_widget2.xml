@@ -5,15 +5,15 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/edit_widget"
+        android:id="@+id/edit_widget_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorWhite"
-        android:textAlignment="center"
-        android:clickable="true"
-        android:hint=" Znote"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="Znote"
+        android:background="@drawable/notedesign"
         android:inputType="textMultiLine"
-        style="@android:style/Widget.EditText"
+        android:padding="10dp"
         android:textColorHint="@color/colorPurple" />
 
 </RelativeLayout>
